@@ -1,0 +1,1 @@
+Text(DayOfWeek)' 'Value(DayOfMonth,2)'/'Value(MonthOfYear,2)'/'Value(YearOfEra,4,19,EXCEEDS_PAD)
