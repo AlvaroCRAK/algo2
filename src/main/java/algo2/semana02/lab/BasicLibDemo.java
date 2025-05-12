@@ -1,12 +1,18 @@
 package algo2.semana02.lab;
 
+//import java.time.DayOfWeek;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
+//import java.util.Locale;
+//import java.time.format.TextStyle;
+enum semana {
+	
+}
 public class BasicLibDemo {
+  //private static final int DayOftheWeek = 0;
   private String[] opciones = { "Circulo", "Rectangulo", "Cadena(String)", "Fechas", "Lista" };
-  private Scanner scanner = new Scanner(System.in); // Un solo objeto Scanner
+  static private Scanner scanner = new Scanner(System.in); // Un solo objeto Scanner
   private final FeriadoManager feriadoManager = new FeriadoManager(scanner);
 
   public static void main(String[] args) {
@@ -16,9 +22,12 @@ public class BasicLibDemo {
       int opcion = m.leerOpcionValida();
       m.procesarOpcion(opcion);
     }
+    
+    //System.out.print(DayOfWeek.of(1));
   }
 
-  // Mostrar las opciones del menú principal
+
+// Mostrar las opciones del menú principal
   void mostrarMenu() {
     System.out.println("=== Menú Principal ===");
     int n = 1;
