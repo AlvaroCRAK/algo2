@@ -47,10 +47,10 @@ public class HerenciaDemo {
 	}
 
 	<T extends Persona> void procesar(List<T> personas, T elem) {
-		personas.add(new Persona()); //Error de compilacion
+		//personas.add(new Persona()); //Error de compilacion
 		//personas.add(new Estudiante("")); //Error de compilacion....
-		//personas.add(elem); // Ok
-		//personas.add(null); // Ok
+		personas.add(elem); // Ok
+		personas.add(null); // Ok
 	}
 
 	public static void agregarEstudiantes(List<? super Estudiante> lista, int cant) {

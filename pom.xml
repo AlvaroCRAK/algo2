@@ -13,12 +13,23 @@
     <maven.compiler.target>21</maven.compiler.target>
   </properties>
 
+  <!-- Aquí todas las dependencias juntas -->
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.13.2</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.miglayout</groupId>
+      <artifactId>miglayout-swing</artifactId>
+      <version>11.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.jgoodies</groupId>
+      <artifactId>jgoodies-forms</artifactId>
+      <version>1.9.0</version>
     </dependency>
   </dependencies>
 
@@ -62,4 +73,3 @@
     </plugins>
   </build>
 </project>
-
